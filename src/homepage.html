@@ -11,7 +11,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="myStyles.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -21,7 +21,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="homepage.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
                         <li class="nav-item"><a class="nav-link" href="keywords.html">Key Words</a></li>
                         <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
@@ -30,12 +30,13 @@
             </div>
         </nav>
 
-        <!-- video background-->
+        <!-- video background
         <video autoplay muted loop id="myMail">
             <source src="Mail.mp4" type="video/mp4">
-        </video>
+        </video> -->
+
         <!-- Header-->
-        <div class="header">
+        <header class="bg-dark py-5">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
@@ -52,25 +53,19 @@
             <div class="container px-5 my-5">
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h2 class="h4 fw-bolder">Submit Pictures</h2>
-                        <p>Insert text description here</p>
-                        <a class="text-decoration-none" href="pictures.html">
-                            Submit my pictures
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                        <h2 class="h4 fw-bolder">Tell us about your experiences</h2>
+                        <input class="button" type="file" id="myFile" name="filename">
                     </div>
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h2 class="h4 fw-bolder">See your future room!</h2>
-                        <p>Insert text description here</p>
-                        <a class="text-decoration-none" href="room.html">
-                            See my room
+                        <h2 class="h4 fw-bolder">Customize your top potential skills</h2>
+                        <a class="text-decoration-none" href="keywords.html">
+                            Learn more
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <h2 class="h4 fw-bolder">Learn more about your privacy</h2>
-                        <p>Insert text description here</p>
-                        <a class="text-decoration-none" href="#!">
+                        <h2 class="h4 fw-bolder">See your dream opportunities</h2>
+                        <a class="text-decoration-none" href="opportunities.html">
                             Learn more
                             <i class="bi bi-arrow-right"></i>
                         </a>
