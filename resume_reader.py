@@ -16,7 +16,6 @@ import sys
 from nltk.tokenize import sent_tokenize
 from nltk.corpus import stopwords
 
-        
     
 def get_content(content_path):
     with open(content_path,'r', encoding='gbk',errors ='ignore') as f:
@@ -72,12 +71,13 @@ def pdf_to_txt(file):
     
 if __name__ == '__main__':
     files = glob.glob("/Users/christinayu/Desktop/ListSpam/ListSpam-HackDuke-2021/*.txt")
+    data = files.read()
     corpus = [get_content(x) for x in files]
     sample_inx = random.randint(0, len(corpus))
     split_words = [x for x in jieba.cut(corpus[sample_inx]) if x not in stop_words("stop_words.utf8")]
-    print("top(k) skills you have are: " + str(get_TF(10, split_words)))
+    print("You may have skills like: " + str(get_TF(10, split_words)))
     
-    
+
        
     #     fp = file(data, 'rb')
     #     rsrcmgr = PDFResourceManager()
