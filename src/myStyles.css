@@ -16,15 +16,7 @@
     padding: 20px;
   }
 
-navbar {
-    position: fixed;
-    right: 0;
-    width: 5%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    align-items: stretch;
-    flex-direction: row;
- }
+
 
 .box {
    padding-left
